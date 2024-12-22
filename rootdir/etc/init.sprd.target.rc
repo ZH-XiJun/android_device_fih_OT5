@@ -1,0 +1,51 @@
+
+#fingerprint
+#import /vendor/etc/init/hw/init.fingerprint.gxfp9608_oj6.rc
+#import /vendor/etc/init/hw/init.vg2.fingerprint.rc
+#import /vendor/etc/init/hw/init.fih.ramdump.rc
+#import /vendor/etc/init/hw/init.fih.sharp.rc
+#import /vendor/etc/init/hw/init.fih.usb.configfs.rc
+#import /vendor/etc/init/hw/init.VG2.usb.rc
+
+# key provision
+import /vendor/etc/init/hw/init.fih.key.rc
+
+#sensor
+#import /vendor/etc/init/hw/init.vg2.sensor.rc
+
+#touch
+#import /vendor/etc/init/hw/init.vg2.touch.rc
+
+#lcm
+#import /vendor/etc/init/hw/init.vg2.lcm.rc
+
+#audio
+#import /vendor/etc/init/hw/init.vg2.audio.rc
+
+#add
+on property:sys.boot_completed=1
+	chown system system /sys/class/leds/red/bt_board_reset
+	
+on property:vendor.sprd.bt.reset=1
+	write /sys/class/leds/red/bt_board_reset 1
+
+on property:vendor.sprd.bt.reset=0
+	write /sys/class/leds/red/bt_board_reset 0
+
+#add for fixed cpu frequency
+#on boot
+#	write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor userspace
+#	write /sys/devices/system/cpu/cpufreq/policy0/scaling_setspeed 1200000
+	
+#add
+#on property:sys.boot_completed=1
+#	chown system system /sys/class/extcon/extcon0/device/csg_poweron
+	
+#on property:vendor.tts.csg.poweron=1
+#	write /sys/class/extcon/extcon0/device/csg_poweron enable
+
+#on property:vendor.tts.csg.poweron=0
+#	write /sys/class/extcon/extcon0/device/csg_poweron disable	
+
+
+

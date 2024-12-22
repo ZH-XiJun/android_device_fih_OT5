@@ -1,0 +1,187 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "create_splloader_dual_slot_byname_path.sh",
+    src: "bin/create_splloader_dual_slot_byname_path.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.OT5.rc",
+    src: "etc/init.OT5.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.OT5.usb.rc",
+    src: "etc/init.OT5.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.YQ5.rc",
+    src: "etc/init.YQ5.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.YQ5.usb.rc",
+    src: "etc/init.YQ5.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.cali.rc",
+    src: "etc/init.cali.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.fih.ramdump.rc",
+    src: "etc/init.fih.ramdump.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.fih.usb.configfs.rc",
+    src: "etc/init.fih.usb.configfs.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ram.gms.rc",
+    src: "etc/init.ram.gms.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ram.native.rc",
+    src: "etc/init.ram.native.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ram.rc",
+    src: "etc/init.ram.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sprd.target.rc",
+    src: "etc/init.sprd.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sprd.usb.rc",
+    src: "etc/init.sprd.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.storage.rc",
+    src: "etc/init.storage.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9157_2h10.rc",
+    src: "etc/init.ums9157_2h10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9157_2h10.usb.rc",
+    src: "etc/init.ums9157_2h10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_1h10.rc",
+    src: "etc/init.ums9620_1h10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_1h10.usb.rc",
+    src: "etc/init.ums9620_1h10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_2h10.rc",
+    src: "etc/init.ums9620_2h10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_2h10.usb.rc",
+    src: "etc/init.ums9620_2h10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_2h10_uob.rc",
+    src: "etc/init.ums9620_2h10_uob.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_2h10_uob.usb.rc",
+    src: "etc/init.ums9620_2h10_uob.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_2h10_uob_marlin3.rc",
+    src: "etc/init.ums9620_2h10_uob_marlin3.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9620_2h10_uob_marlin3.usb.rc",
+    src: "etc/init.ums9620_2h10_uob_marlin3.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+// fstab
+prebuilt_etc {
+    name: "fstab.cali",
+    src: "etc/fstab.cali",
+    vendor: true,
+}

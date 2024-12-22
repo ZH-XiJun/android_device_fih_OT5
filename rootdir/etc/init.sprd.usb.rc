@@ -1,0 +1,15 @@
+on early-boot
+    setprop persist.vendor.pps.disallowed 1
+
+on charger
+    setprop persist.vendor.pps.disallowed 1
+
+on boot
+    enable fih-setprop-sh
+    start fih-setprop-sh
+
+service fih-setprop-sh /vendor/bin/init.fih.setprop.sh
+    class core
+    user root
+    oneshot
+    disabled
